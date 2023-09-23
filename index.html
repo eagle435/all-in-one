@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1{
+            font-weight: normal;
+            font-size: 25px;
+        position: relative;
+font-family:'Times New Roman', Times, serif;
+    color:rgb(85, 112, 199);
+    font-weight: bold;
+   
+
+
+        }
+        h1::before{
+            content: '';
+            position:absolute;
+            width: 100px;
+            height: 3px;
+            background-color: crimson;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: animate 2s linear infinite;
+        
+        }
+        @keyframes animate
+        {
+            0%{
+                width: 50px;
+
+            }
+            50%{
+                width: 100px;
+               
+            }
+            100%{
+                width: 50px;
+               
+            }
+     
+    }
+    h6{
+        color: white;
+        padding-left: 80%;
+      
+    }
+        body{
+     background-image: url("all.jpg");
+     max-width: 100%;
+     overflow-x: hidden;
+    background-repeat: repeat-y;
+    }
+     input[type=search]:not(:placeholder-shown){
+         width: 200px;
+         filter: brightness(100%);
+    } input[type=search]{
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        
+        font-size: 18px;
+        border-radius: 25px;
+        background-position: 2% 50%;
+        background-repeat: no-repeat;
+        background-color:transparent;
+        background-size: 30px;
+        border: solid 0.01px ;
+        filter: brightness(170%);
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .google{
+margin-top: 150px;
+margin-left: 20%;
+border: lightblue solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+color:yellow;
+
+    }
+}
+    .shein{
+margin-top: 20px;
+margin-left: 20%;
+border: black solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+::placeholder{
+    color: black;
+    }
+}
+    .youtube{
+margin-top: 20px;
+margin-left: 20%;
+border: red solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: red;
+}
+    }
+    .yandex{
+        margin-top: 20px;
+margin-left: 20%;
+border: orangered solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color:red;
+}
+    }
+    .duckduckgo{
+        margin-top: 20px;
+margin-left: 20%;
+border: orange solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: green;
+}
+    }
+    .yahoo{
+        margin-top: 20px;
+margin-left: 20%;
+border: purple solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: purple;
+}
+    }
+    .askjeeves{
+        margin-top: 20px;
+margin-left: 20%;
+border: grey solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: red;
+}
+    }
+   .amazon{
+    margin-top: 20px;
+margin-left: 20%;
+border: orangered solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: black;
+}
+
+   } 
+   .bing{
+    margin-top: 20px;
+margin-left: 20%;
+border: orangered solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color:white;
+font-weight: bold;
+::placeholder{
+    color: red;
+}
+   }
+    .startpage{
+        margin-top: 20px;
+margin-left: 20%;
+border: darkblue solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: black;
+}
+    }
+    .qwant{
+        margin-top: 20px;
+margin-left: 20%;
+border: rgba(red, green, blue, alpha) solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: black;
+}
+    }
+    .bravesearch{
+        margin-top: 20px;
+margin-left: 20%;
+border: orangered solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: purple;
+}
+    }
+    .you{
+        margin-top: 20px;
+margin-left: 20%;
+border: rgb(253, 3, 87) solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: orangered;
+}
+    }
+    .swisscows{
+        margin-top: 20px;
+margin-left: 20%;
+border: black solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: black;
+}
+    }
+    .seznam{
+        margin-top: 20px;
+margin-left: 20%;
+border: red solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: black;
+}
+    }
+    .naver{
+        margin-top: 20px;
+margin-left: 20%;
+border:  green solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: green;
+}
+    }
+
+    .ecosia{
+        margin-top: 20px;
+margin-left: 20%;
+border:  green solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: green;
+}
+    }
+    .dogpile{
+        margin-top: 20px;
+margin-left: 20%;
+border:  blue solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: blue;
+}
+    }
+    .aol{
+        margin-top: 20px;
+margin-left: 20%;
+border:  black solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: black;
+}
+    }
+    .github{
+        margin-top: 20px;
+margin-left: 20%;
+border:  black solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: black;
+}
+    }
+    .gsmarena{
+        margin-top: 20px;
+margin-left: 20%;
+border:  red solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: white;
+font-weight: bold;
+::placeholder{
+    color: red;
+}
+    }
+    </style>
+</head>
+<body>
+    <center><h1>Search Engines</h1></center>
+    <div class="google">
+           <form action="https://www.google.com/search" method="get" class="search">
+           <input type="search" placeholder="Google" name="q">
+            </form></div>
+   <div class="shein">
+            <form action="https://www.shein.com/search" method="get" class="search">
+            <input type="search" placeholder="Shein" name="q">
+            </form></div>   
+   <div class="youtube">
+            <form action="https://www.youtube.com/search" method="get" class="search">
+            <input type="search" placeholder="Youtube" name="q">
+            </form></div>
+   <div class="yandex">
+            <form action="https://yandex.com/search/?q=h&lr=11497/search" method="get" class="search">
+            <input type="search" placeholder="Yandex" name="q">
+            </form></div>
+   <div class="duckduckgo">
+            <form action="https://www.yahoo.com/search" method="get" class="search">
+            <input type="search" placeholder="Duck Duck Go" name="q">
+            </form></div>
+  <div class="yahoo">
+            <form action="https://duckduckgo.com/duckduckgo-help-pages/add-ons/removal/search" method="get" class="search">
+            <input type="search" placeholder="Yahoo!!" name="q">
+            </form></div>
+   <div class="askjeeves">
+           <form action="https://uk.ask.com/web?q=/search" method="get" class="search">
+            <input type="search" placeholder="Ask Jeeves" name="q">
+            </form></div>
+   <div class="amazon">
+          <form action="https://www.amazon.com/search" method="get" class="search">
+          <input type="search" placeholder="Amazon" name="q">
+           </form></div>
+   <div class="bing">
+            <form action="https://www.bing.com/search" method="get" class="search">
+            <input type="search" placeholder="Bing" name="q">
+           </form></div>    
+   <div class="startpage">
+            <form action="https://www.startpage.com/search" method="get" class="search">
+            <input type="search" placeholder="Start Page" name="q">
+            </form></div>   
+   <div class="qwant">
+             <form action="https://www.QWant.com/search" method="get" class="search">
+              <input type="search" placeholder="qwant" name="q">
+              </form></div>
+   <div class="bravesearch">
+               <form action="https://www.bravesearch.com/search" method="get" class="search">
+              <input type="search" placeholder="Brave Search" name="q">
+              </form></div>
+    <div class="you">
+                <form action="https://www.you.com/search" method="get" class="search">
+               <input type="search" placeholder="You" name="q">
+               </form></div>
+    <div class="swisscows">
+                <form action="https://www.swisscows.com/search" method="get" class="search">
+               <input type="search" placeholder="Swisscows" name="q">
+               </form></div>
+   <div class="seznam">
+                <form action="https://www.seznam.com/search" method="get" class="search">
+               <input type="search" placeholder="Seznam" name="q">
+               </form></div>
+   <div class="naver">
+                <form action="https://www.naver.com/search" method="get" class="search">
+               <input type="search" placeholder="Naver" name="q">
+               </form></div>
+     <div class="ecosia">
+                <form action="https://www.ecosia.com/search" method="get" class="search">
+               <input type="search" placeholder="Ecosia" name="q">
+               </form></div>
+    <div class="dogpile">
+                <form action="https://www.dogpile.com/search" method="get" class="search">
+               <input type="search" placeholder="Dogpile" name="q">
+               </form></div>
+   <div class="aol">
+                <form action="https://www.AOL.com/search" method="get" class="search" id="AOL">
+               <input type="search" placeholder="AOL" name="q">
+               </form></div>
+ <div class="github">
+                <form action="https://www.github.com/search" method="get" class="search">
+               <input type="search" placeholder="Github" name="q">
+               </form></div>
+  <div class="gsmarena">
+                <form action="https://www.gsmarena.com/search" method="get" class="search">
+               <input type="search" placeholder="GSMArena" name="q">
+               </form></div>
+               <center>  <H6> done by alhassan khalil</H6></center>
+</body>
+</html>
