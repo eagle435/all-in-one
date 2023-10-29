@@ -5,45 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         h1{
+    
+
+    h1{
             font-weight: normal;
             font-size: 25px;
         position: relative;
 font-family:'Times New Roman', Times, serif;
-    color:rgb(85, 112, 199);
+    color:rgb(44, 44, 44);
     font-weight: bold;
+    margin-left: 90px;
+ animation: animate 4s linear infinite;
+ background:linear-gradient(90deg,red,blue,yellow,lightgreen);
+ background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
    
-
-
         }
-        h1::before{
-            content: '';
-            position:absolute;
-            width: 100px;
-            height: 3px;
-            background-color: crimson;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: animate 2s linear infinite;
-        
-        }
-        @keyframes animate
-        {
-            0%{
-                width: 50px;
-
-            }
-            50%{
-                width: 100px;
-               
-            }
-            100%{
-                width: 50px;
-               
-            }
-     
+        @keyframes animate{
+    0%{
+        transform: translateX(200%)
     }
+    50%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(200%);
+    }
+   }
+   h1::before{
+    content: '';
+    height: 3px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    margin-top: 40px;
+    display:flex;
+    margin-left: 70px;
+animation: animate 4s linear infinite;
+
+   }
+   @keyframes animate{
+    0%{
+        transform: translateX(200%)
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(200%);
+    }
+   }
+     
+    
     h6{
         color: white;
         padding-left: 80%;
@@ -67,8 +82,7 @@ font-family:'Times New Roman', Times, serif;
         
         font-size: 18px;
         border-radius: 25px;
-        background-position: 2% 50%;
-        background-repeat: no-repeat;
+
         background-color:transparent;
         background-size: 30px;
         border: solid 0.01px ;
@@ -375,9 +389,34 @@ font-weight: bold;
     color: red;
 }
     }
+    .bard{
+        margin-top: 20px;
+margin-left: 20%;
+border: white solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: violet;
+font-weight: bold;
+::placeholder{
+    color: white;
+}
+    }
+    .chatgpt{
+        margin-top: 20px;
+margin-left: 20%;
+border: white solid 3px;
+width: 200px;
+border-radius: 25px;
+background-color: green;
+font-weight: bold;
+::placeholder{
+    color: white;
+}
+    }
     </style>
 </head>
 <body>
+   
     <center><h1>Search Engines</h1></center>
     <div class="google">
            <form action="https://www.google.com/search" method="get" class="search">
@@ -400,7 +439,7 @@ font-weight: bold;
                         <input type="search" placeholder="Romsmania" name="q">
                          </form></div>
    <div class="shein">
-            <form action="https://www.shein.com/search" method="get" class="search">
+            <form action="https://ar.shein.com/" method="get" class="search">
             <input type="search" placeholder="Shein" name="q">
             </form></div>   
    <div class="youtube">
@@ -412,7 +451,7 @@ font-weight: bold;
             <input type="search" placeholder="Yandex" name="q">
             </form></div>
    <div class="duckduckgo">
-            <form action="https://duckduckgo.com/duckduckgo-help-pages/add-ons/removal/search" method="get" class="search">
+            <form action="https://duckduckgo.com/duckduckgo-help-pages/add-ons/removal/search?q=g" method="get" class="search">
             <input type="search" placeholder="Duck Duck Go" name="q">
             </form></div>
   <div class="yahoo">
@@ -478,6 +517,14 @@ font-weight: bold;
   <div class="gsmarena">
                 <form action="https://www.gsmarena.com/search" method="get" class="search">
                <input type="search" placeholder="GSMArena" name="q">
+               </form></div>
+ <div class="bard">
+                <form action="https://bard.google.com/chat/search" method="get" class="search">
+               <input type="search" placeholder="Bard" name="q">
+               </form></div>
+<div class="chatgpt">
+                <form action="https://chat.openai.com/" method="get" class="search">
+               <input type="search" placeholder="chatgpt" name="q">
                </form></div>
                <center>  <H6> done by alhassan khalil</H6></center>
 </body>
